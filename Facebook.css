@@ -1,0 +1,381 @@
+    /* Reset Default Space */
+    
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+    }
+    /* Body */
+    
+    body {
+        background-color: rgb(230, 228, 228);
+    }
+    /* Header(Nav-bar) layout*/
+    
+    nav {
+        /* position: fixed; */
+    }
+    
+    header>nav ul {
+        background-color: #ffffff;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    /* Page Layout  */
+    
+    article {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+        height: 100vh;
+        overflow: hidden;
+    }
+    /* Left & Right SideBar */
+    /* hide scroll bar by default */
+    
+    article>aside {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 250px;
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    /* Show scrollbar on hover */
+    
+    article>aside:hover {
+        overflow-y: auto;
+    }
+    /* Style the scrollbar for webkit browsers */
+    
+    article>aside::-webkit-scrollbar {
+        width: 0px;
+        /* hidden by default */
+    }
+    /* show when hovered */
+    
+    article>aside:hover::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    article>aside::-webkit-scrollbar-thumb {
+        background: #b5b5b5;
+        border-radius: 20px;
+    }
+    
+    aside>div.info:hover {
+        cursor: pointer;
+        background-color: rgb(242, 236, 236);
+        border-radius: 15px;
+    }
+    /* Left SideBar */
+    
+    aside:nth-child(1) .info {
+        display: flex;
+        flex-flow: row nowrap;
+        /* justify-content: flex-start; */
+        align-items: center;
+        height: 64px;
+        width: 276px;
+        color: #080809;
+        font: 15px 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+        opacity: 0.8;
+        padding: 8px;
+        margin: -6px;
+        margin-left: 6px;
+    }
+    /* Left-sideBar Images and for icon */
+    
+    div.image,
+    div.icon {
+        height: 48px;
+        width: 48px;
+        padding: 6px
+    }
+    
+    div.image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    /* Last Left-Side-Bar image */
+    
+    div.myimg img {
+        border-radius: 20% !important;
+    }
+    
+    aside .info i {
+        font-size: 1.8em;
+    }
+    
+    div.content {
+        display: flex;
+        align-items: center;
+        padding: 6px;
+    }
+    
+    div.content>span {
+        display: inline-block;
+        width: 200px;
+        height: 20px;
+        font-size: 15px;
+        color: #080809;
+    }
+    /* Horizontal-ruler */
+    
+    hr {
+        margin-left: 23px;
+    }
+    /* Heading  */
+    
+    h3 {
+        color: #65686c;
+        margin-top: 12px;
+        font-weight: 500;
+        font-size: 18px;
+        margin-left: 21px;
+    }
+    /* Right-SideBar */
+    
+    aside:last-child {
+        width: 300px;
+        padding: 8px 0px 0px;
+    }
+    
+    aside:last-child .info {
+        display: flex;
+        flex-flow: row nowrap;
+        /* justify-content: flex-start; */
+        align-items: center;
+        height: 64px;
+        width: 276px;
+        color: #080809;
+        font: 15px 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+        opacity: 0.8;
+        padding: 8px;
+        margin: -6px;
+        margin-left: 14px;
+    }
+    
+    aside:last-child .info.right-side-bar {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 295px;
+        height: 64px;
+        padding: 8px;
+        margin: 0;
+        margin-left: 4px;
+        opacity: 1;
+    }
+    
+    aside:last-child #content {
+        display: flex;
+        align-items: center;
+        width: auto;
+        flex-grow: 2;
+    }
+    /* Search icon */
+    
+    .searchicon {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .searchicon i {
+        font-size: 1.1em !important;
+    }
+    /* Ellipsis-Icon */
+    
+    div.ellipsis-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin-left: 25px;
+    }
+    
+    div.ellipsis-icon:hover {
+        border-radius: 40px;
+        background-color: rgb(230, 228, 228);
+    }
+    
+    div.ellipsis-icon i {
+        display: inline-block;
+        font-size: 1.6em;
+    }
+    /* For Plus Symbol */
+    
+    div.plus-symbol {
+        background-color: #e2e5e9;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6px;
+        margin: 4px 0px 0px;
+    }
+    
+    aside:last-child h3 {
+        font-weight: 600;
+    }
+    
+    div.plus-symbol i {
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    /* Main content */
+    
+    article>section {
+        flex: 2 1 500px;
+        height: 100%;
+        background-color: white;
+        overflow-y: auto;
+    }
+    /* Mobile View:hide sidebars */
+    
+    @media (max-width: 768px) {
+        /* stack elements vertically */
+        article {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        /* hide left and right sidebars */
+        article>aside {
+            display: none;
+        }
+        article>section {
+            /* take full width */
+            flex: 1 1 100%;
+            /* optional margin */
+            margin: 0 5px;
+            width: 100%;
+            min-height: 100vh;
+            background-color: blueviolet;
+        }
+    }
+    
+    nav>ul li {
+        list-style-type: none;
+    }
+    /* Facebook logo */
+    
+    li.facebook-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        margin-left: 4px;
+    }
+    /* Facebook-logo image */
+    
+    li.facebook-logo img {
+        width: 60px;
+        height: 60px;
+    }
+    /* Search-Bar */
+    
+    li.search-bar {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 350px;
+    }
+    
+    input[type="text"] {
+        width: 250px;
+        height: 40px;
+        border-radius: 35px;
+        border: none;
+        background-color: rgb(236, 237, 230);
+        padding-left: 32px;
+        font-size: 1em;
+    }
+    /* On-focus */
+    
+    input:active,
+    input:focus {
+        border: none;
+        outline: none;
+    }
+    /* Search-Icon */
+    
+    .search-icon {
+        display: inline-block;
+        position: absolute;
+        left: 8px;
+        top: 16px;
+        color: grey;
+        font-weight: lighter;
+    }
+    /* House-logo/Friends-Group-logo/Video-logo/Groups-logo/Gaming-logo */
+    
+    nav a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        height: 50px;
+    }
+    /* On-hover */
+    
+    a:hover {
+        background-color: rgb(230, 228, 228);
+        border-radius: 10px;
+    }
+    
+    a i {
+        font-size: 1.4em;
+        color: rgb(59, 89, 152);
+    }
+    /* On-focus */
+    
+    a:focus {
+        border-bottom: 4px solid blue;
+    }
+    /* Last-list-element */
+    
+    li.last-icons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 350px;
+        height: 100%;
+        margin-left: 5px;
+    }
+    
+    li.last-icons span {
+        position: relative;
+        width: 45px;
+        height: 45px;
+        border-radius: 45px;
+        background-color: #e2e5e9;
+        margin-right: 8px;
+    }
+    
+    span>i {
+        position: absolute;
+        top: 11px;
+        left: 9px;
+        font-size: 1.4em;
+    }
+    /* On-hover */
+    
+    i:hover {
+        cursor: pointer;
+    }
