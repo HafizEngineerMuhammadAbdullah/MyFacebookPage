@@ -59,3 +59,13 @@ This project is a **frontend UI clone of Facebook**, built to practice:
 git clone https://hafizengineermuhammadabdullah.github.io/MyFacebookPage/Facebook.html
 cd MyFacebookPage
 open Facebook.html
+
+💡 What I Learned
+-> Advanced Flexbox layouts
+-> UI structuring like real apps
+-> Component-based design thinking
+-> Real-world frontend cloning
+
+Connect With Me
+GitHub: https://github.com/HafizEngineerMuhammadAbdullah
+LinkedIn: https://linkedin.com/in/muhammad-abdullah-360a87384/
