@@ -482,9 +482,6 @@ div.card {
     background-color: aqua;
     border-radius: 11px;
 }
-div.first-card {
-    background-image: url('https://www.facebook.com/stories/create/');
-}
 div.card img{
     width: 113px;
     height: 144px;
