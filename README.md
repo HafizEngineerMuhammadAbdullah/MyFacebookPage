@@ -11,7 +11,7 @@
 ---
 
 ## 🚀 Live Preview
-👉 [Click here to view project](https://hafizengineermuhammadabdullah.github.io/MyFacebookPage/)  
+👉 [Click here to view project](https://hafizengineermuhammadabdullah.github.io/MyFacebookPage/Facebook.html)  
 
 ---
 
@@ -56,6 +56,6 @@ This project is a **frontend UI clone of Facebook**, built to practice:
 ## 📂 How to Run Locally
 
 ```bash
-git clone https://hafizengineermuhammadabdullah.github.io/MyFacebookPage/
+git clone https://hafizengineermuhammadabdullah.github.io/MyFacebookPage/Facebook.html
 cd MyFacebookPage
-open index.html
+open Facebook.html
